@@ -5,10 +5,12 @@ import GlassSurface from "./GlassSurface";
 
 const LightDarkM = () => {
   const getInitialDarkMode = () => {
+    if (typeof window === "undefined") return false; 
+
     const isDarkMode = localStorage.getItem("darkMode");
     if (isDarkMode) {
       return JSON.parse(isDarkMode);
-    } else if (typeof window !== "undefined" && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       return true;
     }
     return false;
