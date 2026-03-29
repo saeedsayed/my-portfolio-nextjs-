@@ -43,17 +43,8 @@ const Hero = () => {
             pauseDuration={1500}
             showCursor
             cursorCharacter="|"
-            texts={[
-              "Welcome to React Bits! Good to see you!",
-              "Build some amazing experiences!",
-            ]}
             deletingSpeed={70}
-            variableSpeedEnabled={false}
-            variableSpeedMin={60}
-            variableSpeedMax={120}
             cursorBlinkDuration={0.5}
-            variableSpeed={false}
-            onSentenceComplete={() => {}}
           />
         </h1>
 

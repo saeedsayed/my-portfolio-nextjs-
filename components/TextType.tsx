@@ -7,8 +7,36 @@ import {
   createElement,
   useMemo,
   useCallback,
+  ElementType,
+  HTMLAttributes,
 } from "react";
 import { gsap } from "gsap";
+
+interface VariableSpeed {
+  min: number;
+  max: number;
+}
+
+interface TextTypeProps extends HTMLAttributes<HTMLElement> {
+  text?: string | string[];
+  as?: ElementType;
+  typingSpeed?: number;
+  initialDelay?: number;
+  pauseDuration?: number;
+  deletingSpeed?: number;
+  loop?: boolean;
+  className?: string;
+  showCursor?: boolean;
+  hideCursorWhileTyping?: boolean;
+  cursorCharacter?: string;
+  cursorClassName?: string;
+  cursorBlinkDuration?: number;
+  textColors?: string[];
+  variableSpeed?: VariableSpeed;
+  onSentenceComplete?: (sentence: string, index: number) => void;
+  startOnVisible?: boolean;
+  reverseMode?: boolean;
+}
 
 const TextType = ({
   text = [""],
@@ -30,27 +58,27 @@ const TextType = ({
   startOnVisible = false,
   reverseMode = false,
   ...props
-}) => {
-  const [displayedText, setDisplayedText] = useState("");
-  const [currentCharIndex, setCurrentCharIndex] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  const [isVisible, setIsVisible] = useState(!startOnVisible);
-  const cursorRef = useRef(null);
-  const containerRef = useRef(null);
+}: TextTypeProps) => {
+  const [displayedText, setDisplayedText] = useState<string>("");
+  const [currentCharIndex, setCurrentCharIndex] = useState<number>(0);
+  const [isDeleting, setIsDeleting] = useState<boolean>(false);
+  const [currentTextIndex, setCurrentTextIndex] = useState<number>(0);
+  const [isVisible, setIsVisible] = useState<boolean>(!startOnVisible);
+  const cursorRef = useRef<HTMLSpanElement>(null);
+  const containerRef = useRef<HTMLElement>(null);
 
-  const textArray = useMemo(
+  const textArray = useMemo<string[]>(
     () => (Array.isArray(text) ? text : [text]),
     [text],
   );
 
-  const getRandomSpeed = useCallback(() => {
+  const getRandomSpeed = useCallback((): number => {
     if (!variableSpeed) return typingSpeed;
     const { min, max } = variableSpeed;
     return Math.random() * (max - min) + min;
   }, [variableSpeed, typingSpeed]);
 
-  const getCurrentTextColor = () => {
+  const getCurrentTextColor = (): string => {
     if (textColors.length === 0) return "inherit";
     return textColors[currentTextIndex % textColors.length];
   };
@@ -89,24 +117,20 @@ const TextType = ({
   useEffect(() => {
     if (!isVisible) return;
 
-    let timeout: NodeJS.Timeout;
+    let timeout: ReturnType<typeof setTimeout>;
 
     const currentText = textArray[currentTextIndex];
     const processedText = reverseMode
       ? currentText.split("").reverse().join("")
       : currentText;
 
-    const executeTypingAnimation = () => {
+    const executeTypingAnimation = (): void => {
       if (isDeleting) {
         if (displayedText === "") {
           setIsDeleting(false);
-          if (currentTextIndex === textArray.length - 1 && !loop) {
-            return;
-          }
+          if (currentTextIndex === textArray.length - 1 && !loop) return;
 
-          if (onSentenceComplete) {
-            onSentenceComplete(textArray[currentTextIndex], currentTextIndex);
-          }
+          onSentenceComplete?.(textArray[currentTextIndex], currentTextIndex);
 
           setCurrentTextIndex((prev) => (prev + 1) % textArray.length);
           setCurrentCharIndex(0);
@@ -120,9 +144,7 @@ const TextType = ({
         if (currentCharIndex < processedText.length) {
           timeout = setTimeout(
             () => {
-              setDisplayedText(
-                (prev) => prev + processedText[currentCharIndex],
-              );
+              setDisplayedText((prev) => prev + processedText[currentCharIndex]);
               setCurrentCharIndex((prev) => prev + 1);
             },
             variableSpeed ? getRandomSpeed() : typingSpeed,
@@ -174,7 +196,7 @@ const TextType = ({
     },
     <span
       className="inline"
-      style={{ color: getCurrentTextColor() || "inherit" }}
+      style={{ color: getCurrentTextColor() }}
     >
       {displayedText}
     </span>,
