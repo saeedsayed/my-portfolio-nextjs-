@@ -1,0 +1,82 @@
+[
+    {
+        "skillName": "React JS",
+        "skillIcon": "/icons/skills/react.svg"
+    },
+    {
+        "skillName": "JS",
+        "skillIcon": "/icons/skills/js.svg"
+    },
+    {
+        "skillName": "Next JS",
+        "skillIcon": "/icons/skills/nextjs.svg"
+    },
+    {
+        "skillName": "Rest API",
+        "skillIcon": "/icons/skills/api.svg"
+    },
+    {
+        "skillName": "Bootstrap",
+        "skillIcon": "/icons/skills/bootstrap.svg"
+    },
+    {
+        "skillName": "CSS",
+        "skillIcon": "/icons/skills/css.svg"
+    },
+    {
+        "skillName": "firebase",
+        "skillIcon": "/icons/skills/firebase.svg"
+    },
+    {
+        "skillName": "git",
+        "skillIcon": "/icons/skills/git.svg"
+    },
+    {
+        "skillName": "HTML",
+        "skillIcon": "/icons/skills/html.svg"
+    },
+    {
+        "skillName": "JQuery",
+        "skillIcon": "/icons/skills/jquery.svg"
+    },
+    {
+        "skillName": "Redux",
+        "skillIcon": "/icons/skills/redux.svg"
+    },
+    {
+        "skillName": "Responsive Design",
+        "skillIcon": "/icons/skills/screens.svg"
+    },
+    {
+        "skillName": "SASS",
+        "skillIcon": "/icons/skills/scss.svg"
+    },
+    {
+        "skillName": "SEO",
+        "skillIcon": "/icons/skills/seo.svg"
+    },
+    {
+        "skillName": "Tailwind",
+        "skillIcon": "/icons/skills/tailwind.svg"
+    },
+    {
+        "skillName": "Typescript",
+        "skillIcon": "/icons/skills/typescript.svg"
+    },
+    {
+        "skillName": "NodeJS",
+        "skillIcon": "/icons/skills/nodejs.svg"
+    },
+    {
+        "skillName": "ExpressJS",
+        "skillIcon": "/icons/skills/express.svg"
+    },
+    {
+        "skillName": "MongoDB",
+        "skillIcon": "/icons/skills/mongo.svg"
+    },
+    {
+        "skillName": "Websocket",
+        "skillIcon": "/icons/skills/websocket.svg"
+    }
+]

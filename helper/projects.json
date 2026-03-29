@@ -1,0 +1,109 @@
+[
+    {
+        "name": "E-commerce(Next.JS)",
+        "image": "/images/projects/e-commerce(nextjs).png",
+        "techStack": [
+            "NextJs",
+            "Typescript",
+            "ReactQuery",
+            "Axios",
+            "Responsive design"
+        ],
+        "repoUrl": "https://github.com/saeedsayed/e-commerce-3elgant",
+        "link": "https://saeed-dev-3legant.vercel.app/"
+    },
+    {
+        "name": "Accounting company website",
+        "image": "/images/projects/accounting-company-website.png",
+        "techStack": [
+            "HTML5",
+            "CSS3",
+            "JS",
+            "Responsive design",
+            "JQuery",
+            "Bootstrap",
+            "MultiLanguage"
+        ],
+        "repoUrl": "https://github.com/saeedsayed",
+        "link": "https://logisticaccounting.tax/"
+    },
+    {
+        "name": "Dashboard app",
+        "image": "/images/projects/dashboard-app.png",
+        "techStack": [
+            "ReactJS",
+            "TailwindCSS",
+            "MUI",
+            "Firebase",
+            "Responsive design"
+        ],
+        "repoUrl": "https://github.com/saeedsayed/dashboard",
+        "link": "https://saeed-dev-dashboard.netlify.app/"
+    },
+    {
+        "name": "Travel company website",
+        "image": "/images/projects/travel-company-website.png",
+        "techStack": [
+            "HTML5",
+            "CSS3",
+            "JS",
+            "JQuery",
+            "Bootstrap",
+            "Responsive design"
+        ],
+        "repoUrl": "https://github.com/saeedsayed",
+        "link": "https://saeed-dev-jasmin-project.netlify.app/"
+    },
+    {
+        "name": "weather app",
+        "image": "/images/projects/weather-app.png",
+        "techStack": [
+            "HTML5",
+            "CSS3",
+            "JS",
+            "Responsive design"
+        ],
+        "repoUrl": "https://github.com/saeedsayed/full-stack_weather_app",
+        "link": "https://weather-brown-sigma.vercel.app/"
+    },
+    {
+        "name": "E-commerce (TemplateII)",
+        "image": "/images/projects/e-commerce(template).png",
+        "techStack": [
+            "HTML5",
+            "CSS3",
+            "JS",
+            "Axios",
+            "RestAPI",
+            "Bootstrap",
+            "Responsive design"
+        ],
+        "repoUrl": "https://github.com/saeedsayed/e-commerceKarma",
+        "link": "https://saeedsayed.github.io/e-commerceKarma"
+    },
+    {
+        "name": "Company website (Template)",
+        "image": "/images/projects/company-website(template).png",
+        "techStack": [
+            "NextJs",
+            "TailwindCSS",
+            "Motion",
+            "ReactBootstrap",
+            "Responsive design"
+        ],
+        "repoUrl": "https://github.com/saeedsayed/break-row-by-nextjs",
+        "link": "https://saeed-dev-breakrow.vercel.app/"
+    },
+    {
+        "name": "E-commerce (Template)",
+        "image": "/images/projects/e-commerce(templateII).png",
+        "techStack": [
+            "HTML5",
+            "CSS3",
+            "Bootstrap",
+            "Responsive design"
+        ],
+        "repoUrl": "https://github.com/saeedsayed/timezone-ui-emplate",
+        "link": "https://saeedsayed.github.io/time-zone/"
+    }
+]

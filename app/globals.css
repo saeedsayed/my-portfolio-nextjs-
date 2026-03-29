@@ -1,8 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-color: #f1f1f1;
+  --secondary-color: #ffffff;
+  --font-color: #3b0665;
+  --font-sub-color: #651e9f;
+  --bg-nav: #ffffff;
+  --border-color: #3f3f4666;
+  --hover-color: #2b7af2;
+  --facebook-color: #1877f2;
+  --instagram-color: #fd1d1d;
+  --github-color: #4078c0;
+  --linkedin-color: #0077b5;
+  --whatsapp-color: #25d366;
+  --telegram-color: #0088cc;
+}
+* {
+  scroll-behavior: smooth;
+  user-select: none;
 }
 
 @theme inline {
@@ -12,15 +30,54 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* @media (prefers-color-scheme: dark) { */
+:root.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --primary-color: #000000;
+  --secondary-color: #18181b;
+  --font-color: #f4f4f5;
+  --font-sub-color: #a1a1aa;
+  --bg-nav: #27272a;
+  --border-color: #3f3f4666;
+  --hover-color: #2b7af2;
+  --github-color: #fff;
 }
+/* } */
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+/* For the whole scrollbar */
+.scroll-bar-slim::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* For the track */
+.scroll-bar-slim::-webkit-scrollbar-track {
+  display: none;
+}
+
+/* For the thumb (handle) */
+.scroll-bar-slim::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 5px; /* Add rounded corners */
+}
+
+/* On hover */
+.scroll-bar-slim::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.clock-font {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 500;
 }

@@ -1,0 +1,32 @@
+[
+    {
+        "url": "https://t.me/+201159278628",
+        "icon": "/icons/social/telegram.svg",
+        "label": "Telegram"
+    },
+    {
+        "url": "https://github.com/saeedsayed",
+        "icon": "/icons/social/github.svg",
+        "label": "Github"
+    },
+    {
+        "url": "https://www.facebook.com/SAEIDSAUED",
+        "icon": "/icons/social/facebook.svg",
+        "label": "Facebook"
+    },
+    {
+        "url": "https://www.instagram.com/saeed_sayed1",
+        "icon": "/icons/social/instagram.svg",
+        "label": "Instagram"
+    },
+    {
+        "url": "https://wa.me/+201159278628",
+        "icon": "/icons/social/whatsapp.svg",
+        "label": "Whatsapp"
+    },
+    {
+        "url": "https://www.linkedin.com/in/saeed-developer/",
+        "icon": "/icons/social/linkedin.svg",
+        "label": "Linkedin"
+    }
+]
