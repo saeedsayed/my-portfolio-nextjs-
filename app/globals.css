@@ -4,19 +4,14 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary-color: #f1f1f1;
-  --secondary-color: #ffffff;
-  --font-color: #3b0665;
-  --font-sub-color: #651e9f;
-  --bg-nav: #ffffff;
-  --border-color: #3f3f4666;
+  --sub-background: #f2f2f2;
   --hover-color: #2b7af2;
-  --facebook-color: #1877f2;
-  --instagram-color: #fd1d1d;
-  --github-color: #4078c0;
-  --linkedin-color: #0077b5;
-  --whatsapp-color: #25d366;
-  --telegram-color: #0088cc;
+}
+:root.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --sub-background: #4e4e4e;
+  --hover-color: #2b7af2;
 }
 * {
   scroll-behavior: smooth;
@@ -24,25 +19,16 @@
 }
 
 @theme inline {
+  --color-hover: var(--hover-color);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-sub-background: var(--sub-background);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 /* @media (prefers-color-scheme: dark) { */
-:root.dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-  --primary-color: #000000;
-  --secondary-color: #18181b;
-  --font-color: #f4f4f5;
-  --font-sub-color: #a1a1aa;
-  --bg-nav: #27272a;
-  --border-color: #3f3f4666;
-  --hover-color: #2b7af2;
-  --github-color: #fff;
-}
+
 /* } */
 
 body {

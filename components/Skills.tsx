@@ -35,7 +35,7 @@ const Skills = () => {
             custom={index / 2}
             key={crypto.randomUUID()}
             title={skillName}
-            className="flex flex-col  justify-center items-center w-24 h-24 lg:w-32 lg:h-32 rounded-lg text-center shadow-md dark:bg-gray-500 cursor-target"
+            className="flex flex-col  justify-center items-center w-24 h-24 lg:w-32 lg:h-32 rounded-lg text-center shadow-md bg-sub-background cursor-target"
           >
             <Image
               src={skillIcon}

@@ -45,6 +45,7 @@ const Hero = () => {
             cursorCharacter="|"
             deletingSpeed={70}
             cursorBlinkDuration={0.5}
+            className="text-(--hover-color)"
           />
         </h1>
 

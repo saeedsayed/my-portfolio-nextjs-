@@ -67,7 +67,7 @@ const Header = () => {
           brightness={50}
           opacity={1}
           mixBlendMode="screen"
-          backgroundOpacity={0.4}
+          backgroundOpacity={0.3}
         >
           <ul
             className="gap-6 text-md shadow-lg font-medium bg-bg-nav
