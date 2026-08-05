@@ -28,5 +28,10 @@
         "url": "https://www.linkedin.com/in/saeed-developer/",
         "icon": "/icons/social/linkedin.svg",
         "label": "Linkedin"
+    },
+    {
+        "url": "mailto:eng.saeedsayed@gmail.com",
+        "icon": "/icons/social/gmail.svg",
+        "label": "email"
     }
 ]
