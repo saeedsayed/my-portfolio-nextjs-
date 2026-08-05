@@ -20,7 +20,7 @@ const Resume = () => {
             show resume PDF button  👇
           =============== */}
           <a
-            href={"/saeed-frontend-resume.pdf"}
+            href={"/saeed-MERN-stack.pdf"}
             target="_blank"
             className="text-sm md:text-md lg:text-lg md:order-"
             rel="noreferrer"
@@ -30,9 +30,9 @@ const Resume = () => {
         </div>
         {/* ==========
           resume frame  👇
-        ============== */}  
+        ============== */}
         <iframe
-          src={"/saeed-frontend-resume.pdf"}
+          src={"/saeed-MERN-stack.pdf"}
           title="My resume"
           className="w-full min-h-122.25 h-full order-1 md:order-2 dark:invertD outline outline-offset-4 outline-hover-color rounded-lg cursor-target"
         />
