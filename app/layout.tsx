@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     "design",
     "industry trends",
   ],
+  verification: {
+    google: "HPJvynYgNxWtZE6oEzaJjRAvdtzrdIdJ-oATkV_mHPw",
+  },
 };
 
 export default function RootLayout({
