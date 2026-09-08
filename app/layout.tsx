@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     "design",
     "industry trends",
   ],
+  icons: {
+    icon: "/icon.png",
+  },
   verification: {
     google: "HPJvynYgNxWtZE6oEzaJjRAvdtzrdIdJ-oATkV_mHPw",
   },
