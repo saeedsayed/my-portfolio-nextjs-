@@ -8,10 +8,10 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div
+    <section
       id="about"
+      aria-label="About Me"
       className="flex flex-col md:flex-row items-center"
-      rel="preload"
     >
       {/* =======
         left section 👇
@@ -20,9 +20,10 @@ const Hero = () => {
         <div className="flex gap-4 justify-center md:justify-start items-end">
           <Image
             src={"/images/me.png"}
-            alt="my avatar"
+            alt="Saeed Sayed - Full Stack & Frontend Developer"
             width={200}
             height={200}
+            priority
             className="cursor-target"
           />
           <div>
@@ -51,22 +52,14 @@ const Hero = () => {
         </h1>
 
         <SplitText
-          text="My name is Saeed, I am a Full-Stack Developer with three years of
-          professional experience in designing and implementing interactive and
-          user-friendly web applications. I specialize in utilizing Next.js for
-          developing dynamic front-end interfaces, and I am proficient in the
-          MERN stack, which includes MongoDB, Express.js, React/Next.js, and
-          Node.js for back-end development. I am committed to creating clean,
-          responsive, and scalable digital products that deliver exceptional
-          user experiences while ensuring optimal performance and adherence to
-          best development practices. My approach combines a focus on quality
-          with a dedication to maintaining high standards in all aspects of my
-          work. I am continually seeking opportunities for professional growth
-          and development, and I am eager to take on new challenges that allow
-          me to enhance my skills and contribute to meaningful projects in the
-          field of full-stack development. I value collaboration and strive to
-          engage with others to drive innovation and achieve shared goals."
-          className="text-font-sub-color text-center!  lg:text-left! text-sm lg:text-xl max-w-full cursor-target"
+          text="My name is Saeed. I am a Full Stack Developer with four years of
+          professional experience designing and implementing interactive,
+          scalable web applications. I specialize in Next.js and React for
+          modern front-end interfaces, and Node.js, Express, MongoDB, and PostgreSQL
+          for robust back-end services. I build clean, responsive, high-performance
+          digital products that deliver exceptional user experiences while adhering
+          to modern web standards."
+          className="text-font-sub-color text-center! lg:text-left! text-sm lg:text-xl max-w-full cursor-target"
           delay={130}
           duration={2}
           ease="power3.out"
@@ -86,7 +79,7 @@ const Hero = () => {
       <div className="flex-1">
         <Lottie animationData={lottieFile} />
       </div>
-    </div>
+    </section>
   );
 };
 

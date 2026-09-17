@@ -56,7 +56,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact">
+    <section id="contact" aria-label="Contact Saeed">
       {/* ============
       section title 👇
       ================ */}
@@ -174,7 +174,7 @@ const Contact = () => {
           <Lottie animationData={message} />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

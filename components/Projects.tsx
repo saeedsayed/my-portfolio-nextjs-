@@ -27,7 +27,7 @@ const projects = () => {
   // content
   //===========
   return (
-    <div id="projects">
+    <section id="projects" aria-label="Featured Projects">
       <SectionTitle>my projects</SectionTitle>
       <div>
         <Swiper
@@ -64,7 +64,7 @@ const projects = () => {
           )}
         </Swiper>
       </div>
-    </div>
+    </section>
   );
 };
 
