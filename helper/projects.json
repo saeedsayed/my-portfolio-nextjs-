@@ -52,8 +52,8 @@
             "Bootstrap",
             "Responsive design"
         ],
-        "repoUrl": "https://github.com/saeedsayed",
-        "link": "https://saeed-dev-jasmin-project.netlify.app/"
+        "repoUrl": "https://github.com/saeedsayed/jasmin-travel",
+        "link": "https://saeedsayed.github.io/jasmin-travel/"
     },
     {
         "name": "Accounting company website",
@@ -67,8 +67,8 @@
             "Bootstrap",
             "MultiLanguage"
         ],
-        "repoUrl": "https://github.com/saeedsayed",
-        "link": "https://logisticaccounting.tax/"
+        "repoUrl": "https://github.com/saeedsayed/logistic-tax-office",
+        "link": "https://saeedsayed.github.io/logistic-tax-office/"
     },
     {
         "name": "E-commerce(Next.JS)",
