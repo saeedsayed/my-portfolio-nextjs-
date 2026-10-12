@@ -76,6 +76,18 @@
         "skillIcon": "/icons/skills/mongo.svg"
     },
     {
+        "skillName": "postgreSQL",
+        "skillIcon": "/icons/skills/postgresql.svg"
+    },
+    {
+        "skillName": "Docker",
+        "skillIcon": "/icons/skills/docker.svg"
+    },
+    {
+        "skillName": "Figma",
+        "skillIcon": "/icons/skills/figma.svg"
+    },
+    {
         "skillName": "Websocket",
         "skillIcon": "/icons/skills/websocket.svg"
     }

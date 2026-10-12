@@ -54,13 +54,15 @@ const projects = () => {
               techStack: string[];
               link: string;
               repoUrl: string;
-            }) => (
-              <SwiperSlide key={project.name}>
-                <div className="pb-8">
-                  <ProjectCard project={project} />
-                </div>
-              </SwiperSlide>
-            ),
+              hide?: boolean;
+            }) =>
+              project.hide ? null : (
+                <SwiperSlide key={project.name}>
+                  <div className="pb-8">
+                    <ProjectCard project={project} />
+                  </div>
+                </SwiperSlide>
+              ),
           )}
         </Swiper>
       </div>
